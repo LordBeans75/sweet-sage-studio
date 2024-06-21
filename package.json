@@ -1,6 +1,7 @@
 {
   "name": "sweet-sage-studio",
   "private": true,
+  "homepage": "https://lordbeans75.github.io/sweet-sage-studio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
