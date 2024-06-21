@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Schedule from './components/Schedule';
@@ -13,7 +13,8 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Schedule />} />
+          <Route path="/" element={<Navigate to="/schedule" />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
