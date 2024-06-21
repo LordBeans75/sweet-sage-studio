@@ -1,10 +1,7 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Schedule from './components/Schedule';
-import About from './components/About';
-import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -12,12 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Routes>
-          <Route path="/" element={<Navigate to="/schedule" />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Outlet />
       </main>
       <Footer />
     </div>
